@@ -13,3 +13,13 @@ app.get("/", (req, res) => {
     let htmlPath= path.join(__dirname, "/views/home.html")
     res.sendFile(htmlPath)
 });
+
+app.get("/", (req, res) => {
+    let htmlPath= path.join(__dirname, "/views/register.html")
+    res.sendFile(htmlPath)
+});
+
+app.get("/", (req, res) => {
+    let htmlPath= path.join(__dirname, "/views/login.html")
+    res.sendFile(htmlPath)
+});
