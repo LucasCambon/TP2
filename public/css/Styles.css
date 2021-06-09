@@ -1,0 +1,743 @@
+header{
+    background-color: #EAC926;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100vw;
+}
+
+main{
+    width: 100vw;
+    text-align: center;
+    background-color: #ebebeb;
+    padding-bottom: 20px;
+    
+}
+
+.titulosHome{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: darkgray;
+}
+
+.banner{
+    width: 100vw;
+    height: auto;
+}
+
+.headerSuperior{
+    display: flex;
+    margin:0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 25px;
+    
+}
+
+.secciones1Navbar{
+    padding: 10px;
+}
+
+.secciones2Navbar{
+    padding: 10px;
+    float: right;
+}
+
+.menuHamburguesa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.fa-bars{
+    background-color: #03264C;
+    color: #ffffff;
+    border:solid 5px #03264C;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.logo{
+    box-sizing: content-box;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+}
+
+
+.imgLogo{
+    display: block;
+    width: 20vw;
+    height: auto;
+}
+
+.barraBusqueda{
+    box-sizing: content-box;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    border: solid 2px white;
+    border-radius: 5px;
+}
+
+.pHeader{
+    padding: 20px;
+}
+
+.vl{
+    border-left: 1px solid gray;
+    max-height: 100%;
+  }
+
+.inputBusqueda{
+    box-sizing: content-box;
+    height: 40px;
+    width: 25vw;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+}
+
+.fa-search{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 2px;
+    background-color: transparent;
+    border: none;
+}
+
+
+.ultVisita{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ofertas{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.fotos{
+    background-color: white;
+    padding: 15px;
+}
+
+.contDesc{
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    
+}
+
+.precio{
+    font-weight: bold;
+    width: 30%;
+}
+
+.descuento{
+    color: #39b54a;
+    width: 70%;
+    padding-left: 15px;
+}
+
+.nombre{
+    color: darkgray;
+}
+
+.precioDesc{
+    display: flex;
+    flex-direction: row;
+}
+
+.iconosDescripcion{
+    color: #39b54a;
+    border: solid 1px #39b54a;
+    border-radius: 100%;
+    padding: 5px;
+    transform: scale(-1, 1);
+    position: relative;
+    top: -40px;
+    left: 150px;
+}
+
+.copyright{
+    align-self: flex-start;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.iconos{
+    margin-bottom: 10px;
+    width: 2em;
+    height: 2em;
+    color: #1259c3;
+}
+
+.iconos:hover{
+    color: #39b54a;
+}
+
+
+.cajaGrande{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: gray;
+    
+}
+
+.registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 80vw;
+}
+
+.inptRegister{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin-top: 20px;
+}
+
+.gral:focus{
+    outline: none!important;
+    box-shadow: #EAC926 0px 0px 0px 3px!important;
+}
+
+.direccion{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inptDirecc{
+    box-sizing: content-box;
+    height: 40px;
+    width: 70vw;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.inptNum{
+    box-sizing: content-box;
+    height: 40px;
+    width: 30vw;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin-top: 20px;
+}
+
+.inptFecha{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin-top: 20px;
+    position: relative;
+    top: -10px;
+}
+
+.ciudPostal{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.inptCiudad{
+    box-sizing: content-box;
+    height: 40px;
+    width: 70vw;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.inptPostal{
+    box-sizing: content-box;
+    height: 40px;
+    width: 30vw;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin-top: 20px;
+}
+
+.miniTitulos{
+    position: relative;
+    top: 15px;
+}
+
+.tituloPU {
+    position: relative;
+    top: -10px;
+}
+
+.nacimiento{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.perfilUsuario{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    top: -15px;
+}
+
+.intereses{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    bottom: 25px;
+}
+
+.tituloInt{
+    position: relative;
+    top: -20px;
+}
+
+.inptFoto{
+    position: relative;
+    top: -30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tituloFP{
+    position: relative;
+    top: -30px;
+}
+
+.mtG{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.btnRegister{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1259c3;
+    margin-top: 20px;
+    position: relative;
+    top: -30px;
+    
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 80vw;
+}
+
+.inptLogin{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.btnLogin{
+    box-sizing: content-box;
+    height: 40px;
+    width: 390px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1259c3;
+    
+    
+}
+
+.btnRegister:hover{
+    background-color: #0022AA;
+}
+
+.btnRegister:focus{
+    background-color: #0022AA;
+}
+
+.btnLogin:focus{
+    background-color: #0022AA;
+}
+
+.inptLogin:focus{
+    outline: none;
+    box-shadow: #EAC926 0px 0px 0px 3px;
+}
+
+.btnLogin:hover{
+    background-color: #0022AA;
+}
+
+
+@media only screen and (min-width: 361px) {
+    
+    div.productos:hover{
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
+
+
+    div.ultVisita{
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    div.ofertas{
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    div.menuHamburguesa{
+        display: none;
+    }
+
+    
+
+}
+
+@media only screen and (min-width: 769px) {
+    div.cajaGrande{
+        width: 80%;
+        padding: 10px;
+        margin: auto;
+        display: flex;
+    }
+    
+    div.uno{
+        float: left;
+    }
+    
+    div.dos{
+        margin-left: 15%;
+    }
+
+    div.productos:hover{
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
+
+    div.menuHamburguesa{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 825px){
+    .imgLogo{
+        display: block;
+        width: 30vw;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 539px){
+    div.productos{
+        margin-bottom: 20px;
+    }
+
+    section.ultVisita{
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column!important;
+        justify-content: space-around!important;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    section.ofertas{
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column!important;
+        align-items: center;
+        justify-content: space-around!important;
+        max-width: 100%;
+        max-height: 100%;
+        
+    }
+
+    input.inptRegister{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        margin-top: 20px;
+    }
+
+    div.direccion{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    div.inptDirecc{
+        box-sizing: content-box;
+        height: 40px;
+        width: 70vw;
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    
+    div.inptNum{
+        box-sizing: content-box;
+        height: 40px;
+        width: 30vw;
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        margin-top: 20px;
+    }
+
+    div.ciudPostal{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    input.inptFecha{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    div.perfilUsuario{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    div.intereses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input.inptLogin{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        margin-top: 20px;
+    }
+
+    button.btnLogin{
+        box-sizing: content-box;
+        height: 40px;
+        width: 73vw;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+        border: none;
+        color: #ffffff;
+        font-size: large;
+        font-weight: bold;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #1259c3;
+        
+        
+    }
+}
+
+@media only screen and (max-width: 361px){
+    p.nombre{
+        display: none;
+    }
+
+    section.ultVisita{
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around!important;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    section.ofertas{
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around!important;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    div.fotos{
+        margin-top: 20px;
+    }
+
+    section.headerSuperior{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    section.navBar{
+        display: none;
+    }
+    
+
+    .inputBusqueda{
+        box-sizing: content-box;
+        height: 40px;
+        width: 30vw;
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+
+    }
+    
+    
+
+}
+
+
