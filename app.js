@@ -3,9 +3,10 @@ const app = express();
 const path = require('path');
 
 app.use('/public/img', express.static(__dirname +'/public/img'));
-app.listen(3000, () =>
-    console.log("Levantando el servidor")
-    );
+app.use('/public/css', express.static(__dirname + '/public/css'));
+app.listen(process.env.PORT || 3000, function() {
+    console.log("Servidor corriendo");
+})
 
 
 app.get("/", (req, res) => {
