@@ -147,6 +147,9 @@ main{
     max-height: 100%;
 }
 
+.productos{
+    margin: 20px;
+}
 
 .fotos{
     background-color: white;
@@ -475,6 +478,14 @@ main{
     
     div.productos:hover{
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
+
+    p.nombre{
+        display: none;
+    }
+
+    div.productos:hover .contDesc .nombre{
+        display: block;
     }
 
 
