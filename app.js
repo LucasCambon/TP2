@@ -10,7 +10,4 @@ app.listen(process.env.PORT || 3000, function() {
     console.log("Servidor corriendo");
 })
 
-app.get("/", (req, res) => {
-    let htmlPath= path.join(__dirname, "/views/home.html")
-    res.sendFile(htmlPath)
-});
+
