@@ -190,10 +190,9 @@ main{
     border: solid 1px #39b54a;
     border-radius: 100%;
     padding: 5px;
-    transform: scale(-1, 1);
     position: relative;
     top: -40px;
-    left: 150px;
+    left: 180px;
 }
 
 .copyright{
@@ -488,6 +487,18 @@ main{
         display: block;
     }
 
+    @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+    }
+
+    div.productos:hover .contDesc .iconosDescripcion{
+        animation: rotation 1s;
+    }
 
     div.ultVisita{
         box-sizing: content-box;
