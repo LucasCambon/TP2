@@ -54,6 +54,10 @@ main{
     float: right;
 }
 
+.seccionesGrales{
+    margin: 5px;
+}
+
 .menuHamburguesa{
     display: flex;
     flex-direction: row;
