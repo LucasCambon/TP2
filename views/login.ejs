@@ -1,57 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <link rel="stylesheet" href="../public/css/Styles.css"></link> 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta charset="utf-8">
-        <title>TP2</title>
-    </head>
+    <%- include("./partials/head") %>
+
     <body>
         
-        <header>
-
-            <section class="headerSuperior">
-                <div class="logo">
-                    <a class="imgLogo" href="../"><img src="../public/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"> </img></a>
-                </div>
-                <div class="barraBusqueda">
-                    <form class="barraBusqueda">
-                        <input class="inputBusqueda" type="search" name="barradebusqueda" placeholder="Buscar productos, marcas">
-                        <div class="vl"> 
-                            <button class="form-control fa fa-search" aria-hidden="true" type="submit" value="buscar"></button>
-                        </div>
-                    </form>
-                </div>
-                <p class="pHeader"><i class="fa fa-money" aria-hidden="true"></i> Comprá en cuotas y sin tarjeta de crédito.</p>
-                
-            </section>
-
-            <section class="navBar">
-
-                <div class="secciones1Navbar">
-                    <a class="seccionesGrales" href="../ofertas">Ofertas</a>
-                    <a class="seccionesGrales" href="../tiendas_oficiales">Tiendas Oficiales</a>
-                    <a class="seccionesGrales" href="../vender">Vender</a>
-                    <a class="seccionesGrales" href="../ayuda">Ayuda</a>
-                </div>
-                <br>
-                <div class="secciones2Navbar">
-                    <a class="seccionesGrales" href="../register">Creá tu cuenta <i class="fa fa-id-card"></i></a> 
-                    <a class="seccionesGrales" href="../login">Ingresá <i class="fa fa-sign-in" aria-hidden="true"></i></a> 
-                    <a class="seccionesGrales" href="../carrito">Mis compras <i class="fa fa-shopping-cart"></i></a>
-                </div>
-                
-            </section>
-
-            <div class="menuHamburguesa">
-                <i class="fa fa-bars fa-2x"></i>
-            </div>
-            
-        </header>
+        <%- include("./partials/header") %>
         
         <main>
             <img class="banner" src="../public/img/img-home-banner.jpg" alt="Home Banner">
@@ -70,30 +24,7 @@
 
         </main>
 
-        <footer>
-            <div class="cajaGrande">
-                <div class="uno">
-                    <i class="fa fa-credit-card fa-3x iconos"></i>
-                    <h2></i>Pagá con tarjeta o efectivo</h2>
-                    <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-                </div
-                >
-                <div class="dos">
-                    <i class="fa fa-truck fa-3x iconos"></i>
-                    <h2>Envío gratis desde los $ 2.500</h2>
-                    <p>Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
-                </div>
-
-                <div class="dos">
-                    <i class="fa fa-lock fa-3x iconos"></i>
-                    <h2>Seguridad de principio a fin</h2>
-                    <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@.</p>
-                </div>
-            </div>
-                
-            <div class="copy">Copyright © 1999-2021 MercadoLiebre S.R.L.</div>
-            
-        </footer>
+        <%- include("./partials/footer") %>
 
     </body>
 

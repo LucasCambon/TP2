@@ -3,8 +3,7 @@ const app = express();
 const mainRoutes = require("./src/routes/mainRoutes")
 var path = require('path');
 
-app.use('/public/img', express.static(__dirname +'/public/img'));
-app.use('/public/css', express.static(__dirname + '/public/css'));
+app.use('/public', express.static(__dirname +'/public'));
 
 
 app.listen(process.env.PORT || 3000, function() {
