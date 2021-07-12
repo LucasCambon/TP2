@@ -1,9 +1,17 @@
 [
   {
     "id": 1,
-    "nombre": "Lucas",
-    "apellido": "Cambon",
-    "email": "lucambon08@gmail.com",
-    "contraseña": "probando123"
+    "nombre": "aaaaaaaaaa",
+    "apellido": "aaaaaaaaaa",
+    "usuario": "aaaaaaaaaaaaaa",
+    "email": "aaaaaaaaaaaaa@gmail.com",
+    "contraseña": 12345678,
+    "calle": "aaaaaaaaaaaaaaaaaa",
+    "nroCalle": "1111111111111111111",
+    "provincia": "Capital Federal",
+    "codPostal": 111111111111,
+    "nacimiento": "01-01-2000",
+    "perfil": "vendedor",
+    "interes": "fitness"
   }
 ]

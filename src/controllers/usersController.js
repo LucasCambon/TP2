@@ -15,10 +15,18 @@ const controladorUsers  =
     store: (req, res) => {
 		let obj = {
 			id: users.length + 1,
-			nombre: req.body.nombres,
-			apellido: req.body.apellidos,
+			nombre: req.body.nombre,
+			apellido: req.body.apellido,
+			usuario: req.body.usuario,
 			email: req.body.correo,
 			contraseña: req.body.contraseña,
+			calle: req.body.direccion,
+			nroCalle: req.body.nroCalle,
+			provincia: req.body.provincia,
+			codPostal: req.body.codPostal,
+			nacimiento: req.body.fechaNac,
+			perfil: req.body.perfil,
+			interes: req.body.interes
 		   }
            
 		users.push(obj)
