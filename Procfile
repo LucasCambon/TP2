@@ -1,2 +1,2 @@
-web: nodemon ./src/bin/www
-web: nodemon ./src/bin/www
+web: node ./src/bin/www
+web: node ./src/bin/www
