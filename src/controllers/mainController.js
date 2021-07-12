@@ -1,29 +1,18 @@
-const controlador =
-{
-    home: (req, res) => {
-        res.render("home");
-    },
-    register: (req, res) =>{
-        res.render("register");
-    },
-    login: (req, res) =>{
-        res.render("login");
-    },
-    ofertas: (req, res) =>{
-        res.send("OFERTAS");
-    },
-    tiendas_oficiales: (req, res) =>{
-        res.send("TIENDA OFICIALES");
-    },
-    vender: (req, res) =>{
-        res.send("VENDER");
-    },
-    ayuda: (req, res) =>{
-        res.send("AYUDA");
-    },
-    carrito: (req, res) =>{
-        res.send("MIS COMPRAS");
-    }
-}
+const fs = require('fs');
+const path = require('path');
 
-module.exports = controlador;
+const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+const controller = {
+	index: (req, res) => {
+		res.render("index", {productos:products})
+	},
+	search: (req, res) => {
+		res.render("results", )
+	},
+};
+
+module.exports = controller;
