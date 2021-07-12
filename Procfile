@@ -1,2 +1,2 @@
-web: node app.js
-web: node ./app.js
+web: nodemon ./src/bin/www
+web: nodemon ./src/bin/www
