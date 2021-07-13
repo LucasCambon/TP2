@@ -11,7 +11,7 @@
             <div class="banner"></div>
 
             <section class="contRegister">
-                <form class="registro" action="/users/register" method="POST">
+                <form class="registro" action="/users/register" method="POST" enctype="multipart/form-data">
                     <input class="inptRegister gral" type="text" name="nombre" placeholder="Nombre" minlength="3">
                     <input class="inptRegister gral" type="text" name="apellido" placeholder="Apellido">
                     <input class="inptRegister gral" type="text" name="usuario" placeholder="Nombre de usuario">
@@ -81,7 +81,7 @@
                     </div>
 
                     <p class="tituloFP mtG">Foto de perfil:</p>
-                    <input class="inptFoto" type="file" name="fotoPerfil" value="fotoPerfil">
+                    <input class="inptFoto" type="file" name="image" value="fotoPerfil">
 
                     <button class="btnRegister" type="submit" value="Enviar">Registrarse</button>
                     <button class="btnRegister" type="reset" value="Enviar">Clear</button>

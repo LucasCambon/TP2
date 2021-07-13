@@ -26,7 +26,8 @@ const controladorUsers  =
 			codPostal: req.body.codPostal,
 			nacimiento: req.body.fechaNac,
 			perfil: req.body.perfil,
-			interes: req.body.interes
+			interes: req.body.interes,
+			image: req.file.filename
 		   }
            
 		users.push(obj)

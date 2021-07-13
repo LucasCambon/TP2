@@ -36,7 +36,7 @@ const controller = {
 			discount: req.body.discount,
 			category: req.body.category,
 			description: req.body.description,
-			image: "img-parlante-sony.jpg"
+			image: req.file.filename
 		   }
 		products.push(obj)
 		fs.writeFile(productsFilePath, JSON.stringify(products, null, 2), err => {
