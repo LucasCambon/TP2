@@ -14,5 +14,17 @@
     "perfil": "vendedor",
     "interes": "fitness",
     "image": "1626146192945.png"
+  },
+  {
+    "id": 2,
+    "nombre": "aaaaaaaaaaa",
+    "apellido": "aaaaaaaaaaaaaaa",
+    "usuario": "aaaaaaaaaaaaaaa",
+    "contraseña": "12345678",
+    "calle": "aaaaaaaaaaaaaaaaaaaaaaaaa",
+    "nroCalle": "aaaaaaaaaaaaaaaaaaaaaaaa",
+    "provincia": "1",
+    "interes": "Electro",
+    "image": "1626146192945.png"
   }
 ]

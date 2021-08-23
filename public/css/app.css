@@ -407,6 +407,9 @@ textarea.form-input {
   padding: 15px;
 }
 
+.textErrorForm {
+  color: red;
+}
 
 
 /*====== Media-Queries ======*/

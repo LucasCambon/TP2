@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const { nextTick } = require('process');
 
+const { validationResult } = require("express-validator")
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
@@ -29,27 +30,36 @@ const controller = {
 	
 	// Create -  Method to store
 	store: (req, res) => {
-		let obj = {
-			id: products.length + 1,
-			name: req.body.name,
-			price: req.body.price,
-			discount: req.body.discount,
-			category: req.body.category,
-			description: req.body.description,
-			image: req.file.filename
-		   }
-		products.push(obj)
-		fs.writeFile(productsFilePath, JSON.stringify(products, null, 2), err => {
-			if (err) {
-				console.log('Error writing file', err)
-			} 
-			else {
-				console.log('Successfully wrote file')
+		const resultValidation = validationResult(req);
+		if (resultValidation.errors.length>0) {
+			res.render("product-create-form",{
+				errors: resultValidation.mapped(),
+				oldData: req.body
+			})
+		}
+		else {
+			let obj = {
+				id: products.length + 1,
+				name: req.body.name,
+				price: req.body.price,
+				discount: req.body.discount,
+				category: req.body.category,
+				description: req.body.description,
+				image: req.file.filename
 			}
-		})
-		console.log(obj)
-		res.render("product-create-form", {productos:products})
-		console.log(obj)
+			products.push(obj)
+			fs.writeFile(productsFilePath, JSON.stringify(products, null, 2), err => {
+				if (err) {
+					console.log('Error writing file', err)
+				} 
+				else {
+					console.log('Successfully wrote file')
+				}
+			})
+			console.log(obj)
+			res.redirect("/")
+			console.log(obj)
+		}
 	},
 
 	// Update - Form to edit
